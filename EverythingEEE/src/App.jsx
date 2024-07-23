@@ -4,6 +4,7 @@ import Resources from './Pages/Resources'
 import Card from './Components/Resources/Cards'
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 import image1 from './assets/OIG1.jpeg';
+import navbar from './Components/navbar'
 import './App.css'
 function App() {
       const router = createBrowserRouter([
