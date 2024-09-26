@@ -6,6 +6,9 @@ import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 import image1 from './assets/OIG1.jpeg';
 import navbar from './Components/navbar'
 import './App.css'
+import Year1 from './Pages/Year1';
+import Year2 from './Pages/Year2';
+//import Year3 from './Pages/Year3';
 function App() {
       const router = createBrowserRouter([
             
@@ -19,16 +22,16 @@ function App() {
             },
             {
                   path:'/year1',
-                  element:<><Resources></Resources></>
+                  element:<><Year1></Year1></>
             },
             {
                   path:'/year2',
-                  element:<><Resources></Resources></>
+                  element:<><Year2></Year2></>
             },
-            {
+            /*{
                   path:'/year3',
-                  element:<><Resources></Resources></>
-            },
+                  element:<><Year3></Year3></>
+            },*/
             {
                   path:'/year4',
                   element:<><Resources></Resources></>
