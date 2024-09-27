@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-unused-vars */
-// Import necessary libraries and Firebase setup
 import React, { useEffect, useState } from "react";
 import img2 from '../assets/Bitlogo.jpg';
 import { storage, ref, getDownloadURL } from "../firebase-config";
@@ -11,18 +10,18 @@ const data = {
     modules: {
       'Module 1': ['Semester1/dcmt mod 1 final.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
       'Module 2': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 3': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 4': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 5': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
     },
   },
   Maths: {
     modules: {
       'Module 1': ['Semester2/Maths1/Module_1_Sequence_Lecture_1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
       'Module 2': ['Semester2/Maths1/Module_2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['Semester2/Maths1/Module_3.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['Semester2/Maths1/Module_4.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['Semester2/Maths1/Module_5.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 3': ['Semester2/Maths1/Module_3.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 4': ['Semester2/Maths1/Module_4.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 5': ['Semester2/Maths1/Module_5.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
     },
   },
   PPS: {
@@ -36,7 +35,6 @@ const data = {
   },
   BEE: {
     modules: {	
-      
       'Module 1': ['Semester2/BEE/Module 1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
       'Module 2': ['Semester2/BEE/Module 2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
       'Module 3': ['Semester2/BEE/Module 3.pdf', 'https://www.youtube.com/watch?v=example3'],
