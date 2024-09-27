@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import img2 from '../assets/Bitlogo.jpg';
 import { storage, ref, getDownloadURL } from "../firebase-config";
 import { NavLink } from 'react-router-dom';
+import Navbar from "../Components/navbar";
 
 const data = {
   EDAC: {
@@ -84,27 +85,15 @@ const Sem7 = () => {
 
   return (
     <>
-      {/* Header section */}
-      <div className='relative bg-black h-24 flex items-center justify-between'>
-        <div className='flex items-center'>
-          <div className='text-[rgb(32,158,228)] text-7xl font-bold ml-4 mt-2 mb-2'>Semester 2</div>
-          <div id="container" className='mr-8 ml-28'>
-            <ul className='flex space-x-8 ml-10'>
-              <li><NavLink to="/" className={"text-3xl text-white hover:text-sky-600 ml-5"}>Home</NavLink></li>
-              <li><NavLink to="/resources" className={"text-3xl text-white hover:text-sky-600 ml-7"}>Resources</NavLink></li>
-              <li><NavLink to="/workshops" className={"text-3xl text-white hover:text-sky-600 ml-7"}>Alumni</NavLink></li>
-              <li><NavLink to="/contactUs" className={"text-3xl text-white hover:text-sky-600 ml-7"}>Contact Us</NavLink></li>
-              <li><NavLink to="/about" className={"text-3xl text-white hover:text-sky-600 ml-7"}>About Us</NavLink></li>
-            </ul>
-          </div>
-        </div>
-        <div id="logo" className='absolute top-0 right-0 p-2'>
-          <img className="h-20 w-20 rounded-full mr-3" src={img2} alt="Logo" />
-        </div>
-      </div>
+      <Navbar></Navbar>
+
+      
 
       {/* Main content section */}
       <div className="p-8 bg-black h-screen w-full">
+      <div className=" text-4xl font-bold text-white pt-12 pl-1 text-center">
+        Semester 2
+      </div>
         <div className="mb-4">
           <label className="block text-lg font-medium mb-2">Subject</label>
           <select

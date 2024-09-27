@@ -2,20 +2,15 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faEnvelope, faGripLines, faGripLinesVertical, faLocationDot, faPhone, faPieChart, faXmark } from '@fortawesome/free-solid-svg-icons'
-
-
 import img2 from './images/Bitlogo.jpg'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-
-
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  return <div id="container" className=" text-white text-lg bg-white bg-[url('./images/Space.jpg')] bg-cover bg-center  w-full " ><div id="navbar" className=" flex justify-between padding p-3 backdrop-blur  dark:bg-transparent shadow-xl fixed w-full top-0 z-50 ">
+  return <div id="container" className=" text-white text-lg bg-white bg-[url('./images/Space.jpg')] bg-cover bg-center  w-full shadow-cyan-400" ><div id="navbar" className=" flex justify-between padding p-3 backdrop-blur  dark:bg-transparent shadow-md fixed w-full top-0 z-50 shadow-sky-600">
     <div id="logo" className='flex '>
 
 
@@ -23,12 +18,12 @@ function Navbar() {
 
     </div>
     <div id="container" >
-      <ul className='md:flex space-x-16 hidden md:block'>
-        <li ><NavLink to="/" className={({ isActive }) => `hover:text-sky-600 hidden md:block ${isActive ? "text-sky-600 font-semibold" : " hover:text-slate-900"}`}>Home</NavLink></li>
-        <li ><NavLink to="/resources" className={({ isActive }) => `hover:text-sky-600 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>Resources</NavLink></li>
-        <li ><NavLink to="/workshops" className={({ isActive }) => `hover:text-sky-600 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>Alumni</NavLink></li>
-        <li ><NavLink to="/contactUs" className={({ isActive }) => `hover:text-sky-600 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>Contact Us</NavLink></li>
-        <li ><NavLink to="/about" className={({ isActive }) => `hover:text-sky-600 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>About Us</NavLink></li>
+      <ul className='text-sky-600 md:flex space-x-16 hidden md:block text- font-semibold text-xl'>
+        <li ><NavLink to="/" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Home</NavLink></li>
+        <li ><NavLink to="/resources" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Resources</NavLink></li>
+        <li ><NavLink to="/workshops" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Alumni</NavLink></li>
+        <li ><NavLink to="/contactUs" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Contact Us</NavLink></li>
+        <li ><NavLink to="/about" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>About Us</NavLink></li>
       </ul>
     </div>
     <div>
