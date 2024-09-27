@@ -47,7 +47,7 @@ const data = {
   // Add other subjects similarly...
 };
 
-const Year3 = () => {
+const Sem7 = () => {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedModule, setSelectedModule] = useState(null);
   const [selectedResource, setSelectedResource] = useState(null);
@@ -181,4 +181,4 @@ const Year3 = () => {
   );
 };
 
-export default Year3;
+export default Sem7;

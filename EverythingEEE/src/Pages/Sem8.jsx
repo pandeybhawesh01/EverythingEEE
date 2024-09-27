@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-unused-vars */
-// Import necessary libraries and Firebase setup
 import React, { useEffect, useState } from "react";
 import img2 from '../assets/Bitlogo.jpg';
 import { storage, ref, getDownloadURL } from "../firebase-config";
@@ -47,7 +46,7 @@ const data = {
   // Add other subjects similarly...
 };
 
-const Year3 = () => {
+const Sem8 = () => {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedModule, setSelectedModule] = useState(null);
   const [selectedResource, setSelectedResource] = useState(null);
@@ -181,4 +180,4 @@ const Year3 = () => {
   );
 };
 
-export default Year3;
+export default Sem8;

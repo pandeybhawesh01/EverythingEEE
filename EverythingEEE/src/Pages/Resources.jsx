@@ -17,42 +17,42 @@ const Resources = () => {
             <div className='flex flex-wrap bg-black'>
                 <Card year="1st Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="/Year1" >
 
                 </Card>
                 <Card year="2nd Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="/Year2" >
 
                 </Card>
                 <Card year="3rd Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="/Year3" >
 
                 </Card>
                 <Card year="4th Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="/Year4" >
 
                 </Card>
                 <Card year="5th Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="Sem5" >
 
                 </Card>
                 <Card year="6th Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="Sem6" >
 
                 </Card>
                 <Card year="7th Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="Sem7" >
 
                 </Card>
                 <Card year="8th Semester"
                     imageAddress={image1}
-                    sourceAdress="xyz" >
+                    sourceAdress="Sem8" >
                 </Card>
 
             </div>
