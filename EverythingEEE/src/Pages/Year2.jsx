@@ -9,10 +9,39 @@ import { NavLink } from 'react-router-dom';
 const data = {
   EDAC: {
     modules: {
-      'Module 1': ['PDF', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy', 'Semester1/dcmt mod 1 final.pdf'],
-      'Module 2': ['PDF', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy', 'path_to_pdf'],
-      'Module 3': ['PDF', 'https://www.youtube.com/watch?v=example3', 'path_to_pdf'],
-      // Add the rest of your modules...
+      'Module 1': ['Semester1/dcmt mod 1 final.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 2': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 3': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 4': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 5': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
+    },
+  },
+  Maths: {
+    modules: {
+      'Module 1': ['Semester2/Maths1/Module_1_Sequence_Lecture_1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 2': ['Semester2/Maths1/Module_2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 3': ['Semester2/Maths1/Module_3.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 4': ['Semester2/Maths1/Module_4.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 5': ['Semester2/Maths1/Module_5.pdf', 'https://www.youtube.com/watch?v=example3'],
+    },
+  },
+  PPS: {
+    modules: {
+      'Module 1': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 2': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 3': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 4': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 5': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
+    },
+  },
+  BEE: {
+    modules: {	
+      
+      'Module 1': ['Semester2/BEE/Module 1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 2': ['Semester2/BEE/Module 2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
+      'Module 3': ['Semester2/BEE/Module 3.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 4': ['Semester2/BEE/Module 4.1.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 5': ['Semester2/BEE/Module 5.1pptx.pdf', 'https://www.youtube.com/watch?v=example3'],
     },
   },
   // Add other subjects similarly...
@@ -35,9 +64,9 @@ const Year2 = () => {
       }
     };
 
-    if (selectedModule && data[selectedSubject].modules[selectedModule][2]) {
+    if (selectedModule && data[selectedSubject].modules[selectedModule][0]) {
       // Fetch the PDF only if it's selected
-      fetchPdfUrl(data[selectedSubject].modules[selectedModule][2]);
+      fetchPdfUrl(data[selectedSubject].modules[selectedModule][0]);
     }
   }, [selectedModule, selectedSubject]);
 
@@ -121,9 +150,8 @@ const Year2 = () => {
               onChange={(e) => setSelectedResource(e.target.value)}
             >
               <option value="">Select a note or PDF</option>
-              {data[selectedSubject].modules[selectedModule].map((item, index) => (
-                <option key={index} value={item}>{index === 0 ? 'PDF' : 'Link'}</option>
-              ))}
+              <option value="pdf">PDF</option>
+              <option value="link">Link</option>
             </select>
           </div>
         )}
@@ -131,11 +159,11 @@ const Year2 = () => {
         {/* Display PDF or YouTube video */}
         {selectedResource && (
           <div className="mb-4 mt-16 ml-6">
-            {selectedResource === 'PDF' && pdfUrl ? (
+            {selectedResource === 'pdf' && pdfUrl ? (
               <a href={pdfUrl} target="_blank" rel="noopener noreferrer" className="text-lg text-sky-500">
                 Download PDF
-                </a>
-            ) : (
+              </a>
+            ) : selectedResource === 'link' ? (
               <iframe
                 width="560"
                 height="315"
@@ -145,7 +173,7 @@ const Year2 = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-            )}
+            ) : null}
           </div>
         )}
       </div>
