@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
 function Card(props) {
   const [showCircles, setShowCircles] = useState(false); 
 
   const handleButtonClick = () => {
-    setShowCircles(!showCircles); // Toggle visibility on button click
+    setShowCircles(!showCircles);
   };
 
   return (

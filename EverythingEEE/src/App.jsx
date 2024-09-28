@@ -14,6 +14,9 @@ import Sem5 from './Pages/Sem5';
 import Sem6 from './Pages/Sem6';
 import Sem7 from './Pages/Sem7';
 import Sem8 from './Pages/Sem8';
+import Abt from './Pages/Aboutus';
+import Contact from './Pages/ContactUs';
+import Alumni from './Pages/Alumni';
 //import Year3 from './Pages/Year3';
 function App() {
       const router = createBrowserRouter([
@@ -57,6 +60,18 @@ function App() {
             {
                   path:'/Sem8',
                   element:<><Sem8></Sem8></>
+            },
+            {
+                  path:'/about',
+                  element:<><Abt></Abt></>
+            },
+            {
+                  path:'/contact',
+                  element:<><Contact></Contact></>
+            },
+            {
+                  path:'/alumni',
+                  element:<><Alumni></Alumni></>
             }
 
       ])

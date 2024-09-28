@@ -21,8 +21,8 @@ function Navbar() {
       <ul className='text-sky-600 md:flex space-x-16 hidden md:block text- font-semibold text-xl'>
         <li ><NavLink to="/" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Home</NavLink></li>
         <li ><NavLink to="/resources" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Resources</NavLink></li>
-        <li ><NavLink to="/workshops" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Alumni</NavLink></li>
-        <li ><NavLink to="/contactUs" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Contact Us</NavLink></li>
+        <li ><NavLink to="/alumni" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Alumni</NavLink></li>
+        <li ><NavLink to="/contact" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-sky-400 font-semibold" : " hover:text-slate-900"}`}>Contact Us</NavLink></li>
         <li ><NavLink to="/about" className={({ isActive }) => `hover:text-sky-400 hidden md:block ${isActive ? "text-slate-900 font-semibold" : " hover:text-slate-900"}`}>About Us</NavLink></li>
       </ul>
     </div>
@@ -45,9 +45,8 @@ function Navbar() {
           <li className='text-slate-900 text-[4vh] font-semibold'><NavLink to="/">MENU</NavLink></li>
           <li ><NavLink to="/" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Home</NavLink></li>
           <li ><NavLink to="/events" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Resources</NavLink></li>
-          <li ><NavLink to="/workshops" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Alumni</NavLink></li>
-          <li ><NavLink to="/team" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Contact Us</NavLink></li>
-          <li ><NavLink to="/gallery" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Gallery</NavLink></li>
+          <li ><NavLink to="/alumni" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Alumni</NavLink></li>
+          <li ><NavLink to="/contact" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Contact Us</NavLink></li>
           <li ><NavLink to="/about" className={({ isActive }) => `text-[3vh] hover:text-sky-600 ${isActive ? "text-white" : " hover:text-sky-600"}`}>About </NavLink></li>
 
         </ul>
