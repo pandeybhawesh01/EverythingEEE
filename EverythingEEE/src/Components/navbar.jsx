@@ -44,7 +44,7 @@ function Navbar() {
         <ul className=" flex-row  w-[40%] items-center m-auto text-justify space-y-[10vh]">
           <li className='text-slate-900 text-[4vh] font-semibold'><NavLink to="/">MENU</NavLink></li>
           <li ><NavLink to="/" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Home</NavLink></li>
-          <li ><NavLink to="/events" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Resources</NavLink></li>
+          <li ><NavLink to="/resources" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Resources</NavLink></li>
           <li ><NavLink to="/alumni" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Alumni</NavLink></li>
           <li ><NavLink to="/contact" className={({ isActive }) => `text-[3vh] hover:text-sky-600  ${isActive ? "text-white" : " hover:text-sky-600"}`}>Contact Us</NavLink></li>
           <li ><NavLink to="/about" className={({ isActive }) => `text-[3vh] hover:text-sky-600 ${isActive ? "text-white" : " hover:text-sky-600"}`}>About </NavLink></li>
