@@ -10,42 +10,41 @@ import Navbar from "../Components/navbar";
 const data = {
   EDAC: {
     modules: {
-      'Module 1': ['Semester1/dcmt mod 1 final.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 2': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['path_to_pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 1': ['Semester1/dcmt mod 1 final.pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm'],
+      'Module 2': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLG99TJz7QrIWjqJwfaKYb_T8Qqqls-KiN'],
+      'Module 3': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS'],
+      'Module 4': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLstSxcpBGrtVDM5jLbBD8xGGUOmqpNxqL'],
+      'Module 5': ['path_to_pdf', 'https://www.youtube.com/playlist?list=PLgQFgGS1td4vKepo4Ya5-6Vr6ROAARqH8'],
     },
   },
-  Maths: {
+  Power_Electronics : {
     modules: {
-      'Module 1': ['Semester2/Maths1/Module_1_Sequence_Lecture_1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 2': ['Semester2/Maths1/Module_2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['Semester2/Maths1/Module_3.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['Semester2/Maths1/Module_4.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['Semester2/Maths1/Module_5.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 1': ['Semester2/Maths1/Module_1_Sequence_Lecture_1.pdf', 'https://www.youtube.com/playlist?list=PLs5_Rtf2P2r5KREX_ijxw2Sz-ISNhAgH4'],
+      'Module 2': ['Semester2/Maths1/Module_2.pdf', 'https://www.youtube.com/playlist?list=PLs5_Rtf2P2r5KREX_ijxw2Sz-ISNhAgH4'],
+      'Module 3': ['Semester2/Maths1/Module_3.pdf', 'https://www.youtube.com/playlist?list=PLs5_Rtf2P2r5KREX_ijxw2Sz-ISNhAgH4'],
+      'Module 4': ['Semester2/Maths1/Module_4.pdf', 'https://www.youtube.com/playlist?list=PLs5_Rtf2P2r7xE2uK0cunCO7G6q106BU_'],
+      'Module 5': ['Semester2/Maths1/Module_5.pdf', 'https://www.youtube.com/playlist?list=PLs5_Rtf2P2r4qzuv0tjm7j6-6-rbraQos'],
     },
   },
-  PPS: {
+  EPTD: {
     modules: {
-      'Module 1': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 2': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/watch?v=example3'],
+      'Module 1': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLL-wuJZvxuR7nCSMfWqnW4Pgb68lEDVbW'],
+      'Module 2': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLjUJmyxBMDHXnRJf9qLmtStrMmIpL4SJS'],
+      'Module 3': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLe8lX1SLwAPG_ssxiyipma2oHqeusP3co'],
+      'Module 4': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLD4ED2FAF3C155625'],
+      'Module 5': ['Semester2/PPS/PWC NOTES.pdf', 'https://www.youtube.com/playlist?list=PLm_MSClsnwm9IkUJfr8Xzi9-Ymv9o1EF8'],
     },
   },
-  BEE: {
-    modules: {
-
-      'Module 1': ['Semester2/BEE/Module 1.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 2': ['Semester2/BEE/Module 2.pdf', 'https://www.youtube.com/playlist?list=PLhSp9OSVmeyJBkLSO51JFPSEIIoeRiaJy'],
-      'Module 3': ['Semester2/BEE/Module 3.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 4': ['Semester2/BEE/Module 4.1.pdf', 'https://www.youtube.com/watch?v=example3'],
-      'Module 5': ['Semester2/BEE/Module 5.1pptx.pdf', 'https://www.youtube.com/watch?v=example3'],
+  Control_Theory: {
+    modules: {	
+      
+      'Module 1': ['Semester2/BEE/Module 1.pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo'],
+      'Module 2': ['Semester2/BEE/Module 2.pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRiiBFXtLOsvoAsPXqC8IBd8'],
+      'Module 3': ['Semester2/BEE/Module 3.pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRgyaWjvSyL5A3ozNcg8_ziw'],
+      'Module 4': ['Semester2/BEE/Module 4.1.pdf', 'https://www.youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo'],
+      'Module 5': ['Semester2/BEE/Module 5.1pptx.pdf', 'https://www.youtube.com/playlist?list=PLgwJf8NK-2e43et6qbo4IqYSJCv-6kN90'],
     },
   },
-  // Add other subjects similarly...
 };
 
 const Year4 = () => {
@@ -92,7 +91,7 @@ const Year4 = () => {
       {/* Main content section */}
       <div className="p-8 bg-black h-screen w-full">
         <div className=" text-4xl font-bold text-white pt-12 pl-1 text-center">
-          Semester 2
+          Semester 4
         </div>
         <div className="mb-4">
           <label className="block text-lg font-medium mb-2">Subject</label>

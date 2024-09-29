@@ -92,7 +92,7 @@ const Sem7 = () => {
       {/* Main content section */}
       <div className="p-8 bg-black h-screen w-full">
       <div className=" text-4xl font-bold text-white pt-12 pl-1 text-center">
-        Semester 2
+        Semester 7
       </div>
         <div className="mb-4">
           <label className="block text-lg font-medium mb-2">Subject</label>

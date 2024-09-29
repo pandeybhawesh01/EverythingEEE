@@ -52,7 +52,7 @@ function Navbar() {
         </ul>
       </nav>
     </div>
-    {/* bg-white bg-gradient-to-r from-slate-900 to-slate-800 ... */}
+    
   </div>
   </div>
 }

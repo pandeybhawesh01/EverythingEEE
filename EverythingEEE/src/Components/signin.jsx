@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'; // Added useState import
+import React, { useState } from 'react'; 
 import { NavLink } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'; // Firebase imports
 import { app } from "../firebase-config";
