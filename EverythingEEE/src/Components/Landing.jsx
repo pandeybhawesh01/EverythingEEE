@@ -1,4 +1,5 @@
 import Form from'../Components/form.jsx'
+import Signin from '../Components/signin.jsx'
 function Landing() {
 
     return (
@@ -14,7 +15,7 @@ function Landing() {
                         </div>
                     </div>
                     <div className='md:pt-10 pt-[10vh]'>
-                    <Form />
+                    <Signin />
                     </div>
                     
                 

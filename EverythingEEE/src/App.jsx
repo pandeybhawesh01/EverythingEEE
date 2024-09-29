@@ -17,6 +17,9 @@ import Sem8 from './Pages/Sem8';
 import Abt from './Pages/Aboutus';
 import Contact from './Pages/ContactUs';
 import Alumni from './Pages/Alumni';
+import Signin from './Components/signin'
+import Form from'./Components/form.jsx'
+import Landing from './Components/Landing.jsx';
 //import Year3 from './Pages/Year3';
 function App() {
       const router = createBrowserRouter([
@@ -72,6 +75,18 @@ function App() {
             {
                   path:'/alumni',
                   element:<><Alumni></Alumni></>
+            },
+            {
+                  path:'/signin',
+                  element:<><Signin></Signin></>
+            },
+            {
+                  path:'/form',
+                  element:<><Form></Form></>
+            },
+            {
+                  path:'/landing',
+                  element:<><Landing></Landing></>
             }
 
       ])
