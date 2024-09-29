@@ -1,8 +1,7 @@
-![EEE Website Banner](path-to-banner)
 
 # 🌟 EEE Academic Assistance Website
 
-![Version](https://img.shields.io/badge/version-1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Contributors](https://img.shields.io/github/contributors/your-repo)
+![Version](https://img.shields.io/badge/version-1.0-blue)
 
 ## 📜 Description
 
@@ -19,9 +18,11 @@ This website helps Electrical and Electronics Engineering (EEE) students access 
 
 ## 📸 Screenshots
 
-![Resource Page Screenshot](path-to-screenshot1)
+![LoginPage Page Screenshot](./EverythingEEE/src/assets/landingpg.png)
 
-![Alumni Page Screenshot](path-to-screenshot2)
+![Resource Page Screenshot](./EverythingEEE/src/assets/resourcespage.png)
+
+![Content Page Screenshot](./EverythingEEE/src/assets/contentpage.png)
 
 ## 🛠️ Installation & Setup
 
@@ -29,8 +30,22 @@ This website helps Electrical and Electronics Engineering (EEE) students access 
    ```bash
    git clone https://github.com/your-username/eee-academic-website.git
    cd eee-academic-website
-2. npm install
-3. npm start
+2.
+   ```bash
+   npm install
+3. Install Dependencies
+   ```bash
+   npm install emailjs-com
+   npm install framer-motion
+   npm install -g firebase-tools
+   npm i --save @fortawesome/free-solid-svg-icons                                                                            
+   npm i --save @fortawesome/free-regular-svg-icons                                                                                                    
+   npm i --save @fortawesome/free-brands-svg-icons
+
+4. Ready to run the code
+   ```bash
+   npm run dev
+
 
 ## 🛠️ Tech Stack
 
