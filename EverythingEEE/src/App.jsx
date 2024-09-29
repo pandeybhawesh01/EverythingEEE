@@ -57,7 +57,7 @@ function App() {
                   element:<><Sem6></Sem6></>
             },
             {
-                  path:'/Sem7',
+                  path:'/Sem&',
                   element:<><Sem7></Sem7></>
             },
             {
